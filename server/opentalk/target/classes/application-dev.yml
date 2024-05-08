@@ -1,0 +1,28 @@
+# 1. application-dev.yml
+my:
+  property:
+    name: ${testname}
+#      name: "kk"
+
+spring:
+  datasource:
+    password: ${password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${username}
+    url: jdbc:mysql://${hostname}:${port}/${schema}
+
+  jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
+          format_sql: 'true'
+      show-sql: 'true'
+      hibernate:
+        ddl-auto: update
+
+server:
+  port: '${serverPort}'
+  session:
+    cookie:
+      max-age: 1
+    timeout: 1

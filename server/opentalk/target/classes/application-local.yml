@@ -1,0 +1,19 @@
+
+my:
+  property:
+    name: "kk"
+#      name: "kk"
+
+spring:
+  datasource:
+    password: tai2172004
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/OPENTALK
+
+server:
+  port: '9192'
+  session:
+    cookie:
+      max-age: 1
+    timeout: 1

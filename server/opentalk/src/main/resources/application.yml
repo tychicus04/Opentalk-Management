@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  application:
+    name: opentalk
+  main:
+    allow-bean-definition-overriding: 'true'
+  servlet:
+    multipart:
+      max-file-size: 500KB
+      max-request-size: 500KB
+  profiles:
+    include: common, ex, deploy
+#  jackson:
+#    date-format: "yyyy-MM-dd HH:mm:ss"
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+        SQL:
+cloudinary:
+  cloud-name: dptwppndd
+  api-key: 971827187626813
+  api-secret: DpAnR8zqbaQPTKq5yQm_TA95iaQ
+
+myBranch: HN2

@@ -1,0 +1,22 @@
+# 1. application-dev.yml
+my:
+  property:
+    name: "kk"
+#      name: "kk"
+
+
+spring:
+  datasource:
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://10.10.43.80:3307/opentalk
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update

@@ -1,0 +1,33 @@
+auth:
+  token:
+    expirationInMils: '3600000'
+    jwtSecret: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-secret: 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
+            client-id: 675522148002-9jbpj2arnqs3tm2lsea5a791rvbh2277.apps.googleusercontent.com
+            scope: email,profile
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nguyentychicus@gmail.com
+    password: cmes tmlt hhrd xutx
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+      mail.debug: true
+
+
+
